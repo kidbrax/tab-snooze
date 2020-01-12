@@ -1,0 +1,25 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: lint css
+      run: |
+        npm install -g stylelint
+        npm install -g stylelint-config-standard
+        stylelint **/*.css
+
+  # markdown lint
+  # es/js lint
+
+
+    # - name: Run a multi-line script
+    #   run: |
+    #     echo Add other actions to build,
+    #     echo test, and deploy your project.
