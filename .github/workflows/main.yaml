@@ -11,8 +11,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: lint css
       run: |
-        npm install -g stylelint
-        npm install -g stylelint-config-standard
+        npm install stylelint
+        npm install stylelint-config-standard
         stylelint **/*.css
 
   # markdown lint
