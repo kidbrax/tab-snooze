@@ -2,6 +2,6 @@
 
 extends: stylelint-config-standard
 rules:
-  - indentation: 2
-  - string-quotes: single
-  - no-duplicate-selectors: true
+  indentation: 2
+  string-quotes: single
+  no-duplicate-selectors: true
