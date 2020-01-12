@@ -13,7 +13,7 @@ jobs:
       run: |
         npm install stylelint
         npm install stylelint-config-standard
-        stylelint **/*.css
+        npx stylelint **/*.css
 
   # markdown lint
   # es/js lint
