@@ -25,9 +25,7 @@ jobs:
     - name: lint js
       run: |
         npm install eslint
-        npx eslint --init
-        npx eslint
-        npx stylelint **/*.js
+        npx eslint .
   # markdown lint
   # es/js lint
 
