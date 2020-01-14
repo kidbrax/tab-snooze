@@ -1,0 +1,33 @@
+{
+  "name": "tab-snooze",
+  "version": "1.0.0",
+  "description": "asd",
+  "main": "asd",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "asd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidbrax/tab-snooze.git"
+  },
+  "keywords": [
+    "asd"
+  ],
+  "author": "asd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kidbrax/tab-snooze/issues"
+  },
+  "homepage": "https://github.com/kidbrax/tab-snooze#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}

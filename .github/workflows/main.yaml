@@ -9,12 +9,25 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+
     - name: lint css
       run: |
         npm install stylelint
         npm install stylelint-config-standard
         npx stylelint **/*.css
 
+    # - name: lint markdown
+    #   run: |
+    #     npm install stylelint
+    #     npm install stylelint-config-standard
+    #     npx stylelint **/*.css
+
+    - name: lint js
+      run: |
+        npm install eslint
+        npx eslint --init
+        npx eslint
+        npx stylelint **/*.js
   # markdown lint
   # es/js lint
 
