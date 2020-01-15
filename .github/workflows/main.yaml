@@ -10,11 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
+    - name: setup
+    - run: npm install
+
     - name: lint css
-      run: |
-        npm install stylelint
-        npm install stylelint-config-standard
-        npx stylelint **/*.css
+      run: npx stylelint **/*.css
 
     # - name: lint markdown
     #   run: |
@@ -23,14 +23,4 @@ jobs:
     #     npx stylelint **/*.css
 
     - name: lint js
-      run: |
-        npm install eslint
-        npx eslint .
-  # markdown lint
-  # es/js lint
-
-
-    # - name: Run a multi-line script
-    #   run: |
-    #     echo Add other actions to build,
-    #     echo test, and deploy your project.
+      run: npx eslint .
